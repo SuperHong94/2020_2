@@ -1,0 +1,7 @@
+﻿  IPAddr.cpp
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\IPAddr(ch3)\IPAddr.cpp(24,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char *'입니다.
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\IPAddr(ch3)\IPAddr.cpp(28,19): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\IPAddr(ch3)\IPAddr.cpp(29,46): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\IPAddr(ch3)\IPAddr.cpp(44,2): warning C4996: 'WSAStringToAddressA': Use WSAStringToAddressW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\IPAddr(ch3)\IPAddr.cpp(54,2): warning C4996: 'WSAAddressToStringA': Use WSAAddressToStringW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  IPAddr(ch3).vcxproj -> C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\Debug\IPAddr(ch3).exe

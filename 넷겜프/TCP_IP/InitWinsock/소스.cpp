@@ -185,18 +185,20 @@ int main(int argc, char* argv[])
     // 윈속 초기화
     WSADATA wsa;
  
- 
-    if (WSAStartup(MAKEWORD(atoi(argv[1]), atoi(argv[2])), &wsa) != 0)//2.2로 바꾸려면 MAKEWORD(2,2)로 고치세요
+    
+    //if (WSAStartup(MAKEWORD(atoi(argv[1]), atoi(argv[2])), &wsa) != 0)//2.2로 바꾸려면 MAKEWORD(2,2)로 고치세요
+    //    return 1;
+    if (WSAStartup(MAKEWORD(1,2), &wsa) != 0)//2.2로 바꾸려면 MAKEWORD(2,2)로 고치세요
         return 1;
-  
     //MessageBox(NULL, "윈속초기화성공!", "알림", MB_OK);
 
     //soket()
     SOCKET tcp_sock = socket(AF_INET, SOCK_STREAM, 0);
     if (tcp_sock == INVALID_SOCKET) err_quit("soket()");
     //MessageBox(NULL, "TCP 소켓 생성 성공", "알림", MB_OK);
-    std::cout << atoi(argv[1]) << std::endl;
+    //std::cout << atoi(argv[1]) << std::endl;
     std::cout<<"크기: "<<sizeof(wsa.wVersion)<<' ' << typeid(wsa.wVersion).name() << std::endl;
+    std::cout<<wsa.wVersion << std::endl;
     std::cout << "wVersion: "<< (wsa.wVersion & 0x00FF) <<'.'<< (wsa.wVersion >> 8) << '\n' <<  //버전
 
         "wHighVersion: " << (wsa.wHighVersion & 0x00FF)<<'.'<< (wsa.wHighVersion >> 8) << '\n' <<  //사용할수있는 상위버전
