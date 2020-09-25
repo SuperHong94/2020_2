@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
 	printf("IPv4 주소(변환전)=%s\n", ipv4test);
 
 	//inet_addr() 함수연습
-	printf("IPv4 주소(변환후)=0x%x\n", ipv4test);
+	printf("IPv4 주소(변환후)=0x%x\n", inet_addr(ipv4test));
 
 	//inet_ntoa() 함수연습
 	IN_ADDR ipv4num;

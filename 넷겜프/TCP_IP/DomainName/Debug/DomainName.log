@@ -1,0 +1,5 @@
+﻿  domainName.cpp
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\DomainName\domainName.cpp(15,14): error C2556: 'hostent WSACleanup(void)': 오버로드된 함수가 'int WSACleanup(void)'과(와) 반환 형식만 다릅니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2371): message : 'WSACleanup' 선언을 참조하십시오.
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\DomainName\domainName.cpp(15,2): error C2373: 'WSACleanup': 재정의. 형식 한정자가 다릅니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2371): message : 'WSACleanup' 선언을 참조하십시오.
