@@ -34,8 +34,8 @@ BOOL GetIPAddr(char* name, IN_ADDR* addr)
 	std::cout << "Aliases\n";
 	for (int i =0; ptr->h_aliases[i]; ++i)
 	{
-		if (i[0] == nullptr)
-			break;
+		/*if ( ptr->h_aliases[i] == nullptr)
+			break;*/
 		std::cout << '\t' << ptr->h_aliases[i] << std::endl;
 	}
 
@@ -82,7 +82,6 @@ BOOL GetDomainName( char* name, int namelen)
 	std::cout << endl;
 
 	std::cout << "IP 주소\n";
-
 	for (auto i = ptr->h_addr_list; i != NULL; ++i)
 	{
 		if (i[0] == nullptr)
@@ -102,14 +101,14 @@ int main(int arc, char* argv[])
 	WSADATA wsa;
 	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)
 		return 1;
-	char* ip_name = argv[1];
+	
 	
 	if (argv[1][0] > '9') {
-
-		cout << "찾으려는 도메인 이름: " << ip_name << endl;
+		char* ip_name = argv[1];
+		cout << "찾으려는 도메인 이름: " << argv[1] << endl;
 		//도메인이름 이름으로 찾기
 		IN_ADDR addr;
-		GetIPAddr(ip_name, &addr);
+		GetIPAddr(argv[1], &addr);
 	}
 	else {
 		//IP주소로 찾기
