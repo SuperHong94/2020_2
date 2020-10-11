@@ -1,0 +1,5 @@
+﻿  소스.cpp
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\MultithreadTCPServer\소스.cpp(61,30): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\MultithreadTCPServer\소스.cpp(75,3): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\MultithreadTCPServer\소스.cpp(123,4): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  MultithreadTCPServer.vcxproj -> C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\Debug\MultithreadTCPServer.exe

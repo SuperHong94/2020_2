@@ -1,0 +1,4 @@
+﻿  TCPClient_Fixed.cpp
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\TCPClient_Fixed\TCPClient_Fixed.cpp(80,31): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\TCPClient_Fixed\TCPClient_Fixed.cpp(98,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  TCPClient_Fixed.vcxproj -> C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\Debug\TCPClient_Fixed.exe
