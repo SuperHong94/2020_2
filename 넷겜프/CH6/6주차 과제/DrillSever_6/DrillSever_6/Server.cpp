@@ -13,13 +13,9 @@ using namespace std;
 
 CRITICAL_SECTION cs;
 int g_clientCnt = 0;
-HANDLE ClientEvent;
 string g_pers[BUFSIZE];
 // 소켓 함수 오류 출력 후 종료
-void gotoxy(int x, int y) {
-	COORD pos = { x,y }; //x, y 좌표 설정
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos); //커서 설정
-}
+
 void err_quit(char* msg)
 {
 	LPVOID lpMsgBuf;
@@ -77,7 +73,6 @@ int recvf(SOCKET s,char* fname, char* buf, int len, int flags)
 	char* ptr = buf;
 	int left = len;
 	int remain = 0;
-	int l = len / 10;
 	int percent = len;
 	g_pers[index] = ' ';
 	while (left > 0) {
@@ -92,14 +87,18 @@ int recvf(SOCKET s,char* fname, char* buf, int len, int flags)
 		remain += received;
 		int result = (float)remain * 100 / (float)percent;
 
-		EnterCriticalSection(&cs);
+		
 		g_pers[index] = ' ';
 		g_pers[index] = fname;
 		g_pers[index] +="진행률: ";
 		g_pers[index] += to_string(result);
 		g_pers[index] += "% \t";
-		string r = g_pers[1] + g_pers[2];
-		
+		string r;
+		/*for (int i = 0; i < g_clientCnt + 1; i++)
+			r += g_pers[i];*/
+		r += g_pers[1];
+		r += g_pers[2];
+		EnterCriticalSection(&cs);
 		cout << r << '\r';
 		LeaveCriticalSection(&cs);
 
@@ -109,7 +108,7 @@ int recvf(SOCKET s,char* fname, char* buf, int len, int flags)
 // 클라이언트와 데이터 통신
 DWORD WINAPI ProcessClient(LPVOID arg)
 {
-	InitializeCriticalSection(&cs);
+	
 	g_clientCnt++;
 	SOCKET client_sock = (SOCKET)arg;
 	int retval;
@@ -177,7 +176,7 @@ DWORD WINAPI ProcessClient(LPVOID arg)
 int main(int argc, char* argv[])
 {
 	int retval;
-
+	InitializeCriticalSection(&cs);
 	// 윈속 초기화
 	WSADATA wsa;
 	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)

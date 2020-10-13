@@ -1,0 +1,3 @@
+﻿  7_UDPClient.cpp
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH7\7_UDPClient\7_UDPClient.cpp(54,31): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  7_UDPClient.vcxproj -> C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH7\Debug\7_UDPClient.exe

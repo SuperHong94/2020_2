@@ -1,7 +1,5 @@
 ﻿  Server.cpp
-C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\DrillSever_6\Server.cpp(20,16): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
-C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\DrillSever_6\Server.cpp(20,18): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
-C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\DrillSever_6\Server.cpp(93,14): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\DrillSever_6\Server.cpp(170,3): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\DrillSever_6\Server.cpp(220,4): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  DrillSever_6.vcxproj -> C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\Debug\DrillSever_6.exe
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\DrillSever_6\Server.cpp(88,14): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\DrillSever_6\Server.cpp(169,3): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\DrillSever_6\Server.cpp(219,4): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+LINK : fatal error LNK1168: C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH6\6주차 과제\DrillSever_6\Debug\DrillSever_6.exe을(를) 쓰기용으로 열 수 없습니다.
