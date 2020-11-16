@@ -181,7 +181,7 @@ DWORD WINAPI TCPServer6(LPVOID arg)
 int main(int argc, char* argv[])
 {
    
-   
+    using namespace std;
     // 윈속 초기화
     WSADATA wsa;
  
@@ -192,6 +192,7 @@ int main(int argc, char* argv[])
         return 1;
     //MessageBox(NULL, "윈속초기화성공!", "알림", MB_OK);
 
+    cout << wsa.iMaxUdpDg << endl;
     //soket()
     SOCKET tcp_sock = socket(AF_INET, SOCK_STREAM, 0);
     if (tcp_sock == INVALID_SOCKET) err_quit("soket()");

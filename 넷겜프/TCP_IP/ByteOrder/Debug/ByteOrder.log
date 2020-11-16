@@ -1,3 +1,2 @@
-﻿  ByteOrder.cpp
-C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\ByteOrder\ByteOrder.cpp(49,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char *'입니다.
+﻿  ch03_drill.cpp
   ByteOrder.vcxproj -> C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\TCP_IP\Debug\ByteOrder.exe

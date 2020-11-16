@@ -1,0 +1,1 @@
+#pragma comment(lib, "ws2_32") 이거뭐였지?

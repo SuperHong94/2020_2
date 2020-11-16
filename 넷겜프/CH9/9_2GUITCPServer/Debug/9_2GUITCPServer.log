@@ -1,0 +1,6 @@
+﻿  9_2GUITCPServer.cpp
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH9\9_2GUITCPServer\9_2GUITCPServer.cpp(69,35): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH9\9_2GUITCPServer\9_2GUITCPServer.cpp(83,3): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH9\9_2GUITCPServer\9_2GUITCPServer.cpp(168,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH9\9_2GUITCPServer\9_2GUITCPServer.cpp(220,92): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  9_2GUITCPServer.vcxproj -> C:\Users\SuperHong\source\repos\GitHub\2020_2\넷겜프\CH9\Debug\9_2GUITCPServer.exe
